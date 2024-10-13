@@ -1,5 +1,7 @@
 package com.sameh.androidwithcomposefromaz.rest_apis.meals
 
+import com.squareup.moshi.Json
+
 data class Meal(
     val dateModified: Any? = null,
     val idMeal: String? = null,
@@ -29,7 +31,8 @@ data class Meal(
     val strIngredient8: String? = null,
     val strIngredient9: String? = null,
     val strInstructions: String? = null,
-    val strMeal: String? = null,
+    @Json(name = "strMeal")
+    val mealName: String? = null,
     val strMealThumb: String? = null,
     val strMeasure1: String? = null,
     val strMeasure10: String? = null,

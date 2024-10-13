@@ -77,4 +77,8 @@ dependencies {
     implementation (libs.converter.gson)
     // coil
     implementation(libs.coil.compose)
+    // moshi
+    implementation(libs.moshi)
+    implementation(libs.moshi.kotlin)
+    implementation(libs.converter.moshi)
 }
